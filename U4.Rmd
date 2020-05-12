@@ -1,0 +1,10 @@
+---
+title: "Unidad 4. Ecuaciones de valores equivalentes"
+output:
+  html_document:
+    toc: true
+---
+
+## Aplicaciones al ingreso
+
+

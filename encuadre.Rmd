@@ -1,0 +1,24 @@
+---
+title: "Encuadre"
+---
+
+## Justificación
+
+Formar profesionales con capacidad de dirigir, asesorar y ejecutar estrategias gerenciales y de negociación en ámbitos de incertidumbre y competitividad internacional; aplicando e innovando herramientas administrativas, económicas, financieras y mercadológicas. 
+
+
+## Objetivo
+
+El alumno será capaz de aplicar y desarrollar modelos matemáticos para la resolución de problemas económico-financieros y la toma de decisiones.
+
+## Contenido temático
+
+UNIDAD I. Introducción y Bases.
+
+UNIDAD II. Interés Simple y Descuento.
+
+UNIDAD III. Interés Compuesto.
+
+UNIDAD IV. Ecuaciones de valores equivalentes.
+
+UNIDAD V. Depreciación y Anualidades.
