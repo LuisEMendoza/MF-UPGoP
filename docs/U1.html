@@ -344,7 +344,9 @@ $(document).ready(function () {
 <li><a href="#porcentaje.">Porcentaje.</a><ul>
 <li><a href="#cómo-calcular-porcentajes">Cómo calcular porcentajes</a></li>
 </ul></li>
-<li><a href="#progresiones-aritméticas.">Progresiones aritméticas.</a></li>
+<li><a href="#progresiones-aritméticas.">Progresiones aritméticas.</a><ul>
+<li><a href="#cálculo-del-último-término">Cálculo del último término</a></li>
+</ul></li>
 <li><a href="#progresiones-geométricas.">Progresiones geométricas.</a></li>
 <li><a href="#logaritmos.">Logaritmos.</a></li>
 </ul>
@@ -476,6 +478,77 @@ $(document).ready(function () {
 </div>
 <div id="progresiones-aritméticas." class="section level2">
 <h2>Progresiones aritméticas.</h2>
+<p>Es una sucesión de números, llamados <em>términos</em>, en la que cualquier término posterior al primero puede obtenerse del anterior, sumándole (o restándole) un número constante llamado diferencia común ( <strong>d</strong>). Así, por ejemplo:</p>
+<p><span class="math display">\[
+5, 8, 11, 14, ...
+\]</span></p>
+<p>Es una progresión aritmética cuya diferencia es <span class="math inline">\(3\)</span>, ya que el siguiente número se obtiene siempre sumando esta cantidad. Así, el número que sigue es <span class="math inline">\(17\)</span>, luego el <span class="math inline">\(20\)</span>.</p>
+<p>Otro ejemplo es la siguiente progresión:</p>
+<p><span class="math display">\[
+30,24,18,12,6,0,-6,...
+\]</span></p>
+<p>En este caso tenemos una progresión cuya distancia es «negativa», es decir, hay que restarla para obtener el siguiente término. Por lo tanto, <span class="math inline">\(r = -6\)</span>.</p>
+<p>Podemos ya definir algunas variables que nos ayudarán a desarrollar progresiones aritméticas y calcular términos que en algún momento desconozcamos: $a= $ primer término; $d= $ distancia entre términos; $n= $ número de términos; $u= $ último término.</p>
+<div id="cálculo-del-último-término" class="section level3">
+<h3>Cálculo del último término</h3>
+<p>Con esto, podemos enunciar la primera fórmula, la cual nos permitirá encontrar el último término de una progresión aritmética, conociendo el número de términos, el primero y la distancia entre ellos:</p>
+<p><span class="math display">\[
+u=a+d(n-1)
+\]</span></p>
+<p>Obtengamos el último término de una progresión formada por 15 términos, la cual comienza en 4 y la distancia es de 2:</p>
+<p><span class="math display">\[
+a=4\\
+d=2\\
+n=15\\
+u=¿?\\
+\ \\
+u=a+d(n-1)=4+2(15-1)=4+2(14)=4+28=32\\
+u=32
+\]</span></p>
+<p>Ahora bien, conociendo el último de los términos, la distancia y el número de ellos, ¿es posible encontrar el primero? Despejemos la fórmula anterior:</p>
+<p><span class="math display">\[
+u=a+d(n-1)\rightarrow a=u-d(n-1)
+\]</span></p>
+<p>¿Cuál es el primer término de una progresión si el último es 32, siendo 2 la distancia entre los 15 que la conforman?</p>
+<p><span class="math display">\[
+a=¿?\\
+d=2\\
+n=15\\
+u=32\\
+\ \\
+a=u-d(n-1)=32-2(15-1)=32-2(14)=32-28=4\\
+a=4
+\]</span></p>
+<p>Retomando el mismo ejemplo, ¿es posible encontrar la distancia entre los términos de una progresión que comienza en 4, termina en 32 y contiene 15 valores? Desarrollemos la fórmula y probemos:</p>
+<p><span class="math display">\[
+u=a+d(n-1)\rightarrow u-a=d(n-1)\rightarrow \frac{u-a}{n-1}=d\\
+d=\frac{u-a}{n-1}
+\]</span></p>
+<p>Muy bien, ya tenemos la fórmula. Calculemos entonces la distancia:</p>
+<p><span class="math display">\[
+a=4\\
+d=¿?\\
+n=15\\
+u=32\\
+\ \\
+d=\frac{u-a}{n-1}=\frac{32-4}{15-1}=\frac{28}{14}=2\\
+d=2
+\]</span></p>
+<p>También es posible encontrar el número de términos que entran en una progresión aritmética si ya conocemos el primero, el último y la distancia que existe entre ellos. Retomando el ejemplo, despejemos la fórmula y probemos que es 15:</p>
+<p><span class="math display">\[
+u=a+d(n-1)\rightarrow u-a=d(n-1)\rightarrow\frac{u-a}{d}=n-1\\
+\rightarrow\frac{u-a}{d}+1=n\rightarrow n=\frac{u-a}{d}+1
+\]</span></p>
+<p><span class="math display">\[
+a=4\\
+d=2\\
+n=¿?\\
+u=32\\
+\ \\
+n=\frac{u-a}{d}+1 = \frac{32-4}{2}+1=\frac{28}{2}+1=14+1=15\\
+n=15
+\]</span></p>
+</div>
 </div>
 <div id="progresiones-geométricas." class="section level2">
 <h2>Progresiones geométricas.</h2>
