@@ -171,6 +171,8 @@ u=a+d(n-1)=4+2(15-1)=4+2(14)=4+28=32\\
 u=32
 $$
 
+### Cálculo del primer término
+
 Ahora bien, conociendo el último de los términos, la distancia y el número de ellos, ¿es posible encontrar el primero? Despejemos la fórmula anterior:
 
 $$
@@ -188,6 +190,8 @@ u=32\\
 a=u-d(n-1)=32-2(15-1)=32-2(14)=32-28=4\\
 a=4
 $$
+
+### Cálculo de la distancia
 
 Retomando el mismo ejemplo, ¿es posible encontrar la distancia entre los términos de una progresión que comienza en 4, termina en 32 y contiene 15 valores? Desarrollemos la fórmula y probemos:
 
@@ -207,6 +211,8 @@ u=32\\
 d=\frac{u-a}{n-1}=\frac{32-4}{15-1}=\frac{28}{14}=2\\
 d=2
 $$
+
+### Cálculo del número de términos
 
 También es posible encontrar el número de términos que entran en una progresión aritmética si ya conocemos el primero, el último y la distancia que existe entre ellos. Retomando el ejemplo, despejemos la fórmula y probemos que es 15:
 
