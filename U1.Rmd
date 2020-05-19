@@ -230,8 +230,9 @@ u=32\\
 n=\frac{u-a}{d}+1 = \frac{32-4}{2}+1=\frac{28}{2}+1=14+1=15\\
 n=15
 $$
-
   
+
+
 ## Progresiones geométricas.
 
 ## Logaritmos.
