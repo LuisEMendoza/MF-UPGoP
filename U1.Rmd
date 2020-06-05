@@ -171,6 +171,25 @@ u=a+d(n-1)=4+2(15-1)=4+2(14)=4+28=32\\
 u=32
 $$
 
+__Aplicado__. Debe realizar unos pagos de manera mensual, siendo 12 el número total de estos. Sabe que el primero es de $\$250$, el segundo de $\$240$ y el tercero de $\$230$. ¿De cuánto será el último pago?
+
+__R:__. Primero, obtenemos la distancia entre términos y enseguida organizamos los datos. La distancia es fácil obtenerla, ya que sabemos que es la diferencia entre términos. El primero es 250 y el segundo es 240, es decir, $240-250=-10$; por lo cual hay una diferencia negativa de $\10$. Ahora organicemos:
+
+$$
+n=12\ pagos\\
+a=250\\
+d=-10\\
+u=?
+$$
+
+Ahora calculamos el último término con la fórmula que toca:
+
+$$
+u=a+d(n-1)=250+(-10)(12-1)=250+(-10)(11)=250-110=140
+$$
+
+El último pago será de $\$140$.
+
 ### Cálculo del primer término
 
 Ahora bien, conociendo el último de los términos, la distancia y el número de ellos, ¿es posible encontrar el primero? Despejemos la fórmula anterior:
@@ -230,10 +249,108 @@ u=32\\
 n=\frac{u-a}{d}+1 = \frac{32-4}{2}+1=\frac{28}{2}+1=14+1=15\\
 n=15
 $$
-  
 
+### Suma de una progresión aritmética
+
+Así como podemos calcular cualquier término, también es posible encontrar la suma de todos los términos en una progresión. La fórmula que nos permite dicho cálculo es :
+
+$$
+S=\frac{n(a+u)}{2}
+$$
+
+Veamos unos ejemplos:
+
+#### Ejemplos
+
+Encontremos la suma de los primeros treinta términos de la progresión aritmética $15;21;27;...$
+
+Lo primero que debemos hacer es encontrar el último número a partir de los datos. Sabemos que el primero es 15 y el segundo es 21, por lo tanto la distancia existente es de $21-15=6$. Podemos saber la distancia restando el primer elemento del segundo. Ahora encontremos el último término aplicando la fórmula que corresponde:
+
+$$
+n=30\\
+a=15\\
+d=6\\
+u=?\\
+\ \\
+u=a+d(n-1)=15+6(30-1)=15+6(29)=15+174=189\\
+\ \\
+u=189
+$$
+
+Ahora que ya tenemos al último término, apliquemos la fórmula de la suma:
+
+$$
+S=\frac{n(a+u)}{2}=\frac{30(15+189)}{2}=\frac{30(204)}{2}=\frac{6120}{2}=3060
+$$
+
+__Aplicado__. Supongamos que tenemos que realizar 10 pagos con uno inicial por $\$650$. Sabemos que también irá disminuyendo el valor del pago por una diferencia de $\$25$. ¿Cuál será el valor total de la deuda?
+
+Primero debemos encontrar el valor del último pago. Para ello utilizamos la fórmula del último término. Cuando ya lo tengamos podemos calcular la sumatoria.
+
+$$
+a=650\\
+d=-25\\
+n=10\\
+u=?\\
+\ \\
+u=a+d(n-1) \rightarrow 650+(-25)(10-1)=650+(-225)=425\\
+\ \\
+u=425
+$$
+
+Calculemos el valor de la suma de la progresión:
+
+$$
+S=\frac{n(a+u)}{2}=\frac{10(650+425)}{2}=\frac{10(1075)}{2}=\frac{10750}{2}=5375
+$$
+
+El valor total de los pagos es de $\$5,375$.
 
 ## Progresiones geométricas.
+
+Una progresión geométrica es una sucesión de términos, en la que cualquier término posterior al primero puede obtenerse del anterior, multiplicando (o dividiendo) un número constante llamado razón ( __r__). Así, por ejemplo: 
+
+$$
+4,12,36,108,...
+$$
+
+En esta secuencia podemos ver que el primer número es 4 y el siguiente es 12. Podríamos creer que es una progresión aritmética con distancia de 8. Eso haría que el tercer término fuera 20. Pero no es así. Esto se debe a que la progresión no es aritmética, sino geométrica. Así como la distancia entre términos de la progresión aritmética se obtiene restándole el primer término al segundo, en la geométrica se obtiene dividiendo el segundo término entre el primero:
+
+$$
+r=\frac{12}{4}=3\\
+\ \\
+r=3
+$$
+
+Solo que no se le conoce como distancia, si no como _razón_. Sabiendo esto, tomemos el segundo término y multipliquémoslo por la razón. Esto debe dar como resultado el tercer término:
+
+$$
+(12)(3)=36;\\
+(36)(3)=108;\\
+(108)(3)=324;\\
+...
+$$
+
+Sabiendo esto, enunciamos las fórmulas que nos permitirán calcular el último, el primero o el total de términos, la razón sin tener la progresión y la suma de todos ellos.
+
+## Último término
+
+$$
+u=ar^{n-1}
+$$
+
+Por ejemplo, encontremos cuál es el último término de una progresión de 6 números cuyo primero es 5 y la razón es de 8.
+
+$$
+a=5\\
+n=6\\
+r=8\\
+u=?\\
+\ \\
+u=ar^{n-1}=5(8)^{6-1}=5(8)^5=5(32768)=163840\\
+\ \\
+u=163,840
+$$
 
 ## Logaritmos.
 

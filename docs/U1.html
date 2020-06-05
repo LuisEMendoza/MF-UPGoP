@@ -349,8 +349,10 @@ $(document).ready(function () {
 <li><a href="#cálculo-del-primer-término">Cálculo del primer término</a></li>
 <li><a href="#cálculo-de-la-distancia">Cálculo de la distancia</a></li>
 <li><a href="#cálculo-del-número-de-términos">Cálculo del número de términos</a></li>
+<li><a href="#suma-de-una-progresión-aritmética">Suma de una progresión aritmética</a></li>
 </ul></li>
 <li><a href="#progresiones-geométricas.">Progresiones geométricas.</a></li>
+<li><a href="#último-término">Último término</a></li>
 <li><a href="#logaritmos.">Logaritmos.</a></li>
 </ul>
 </div>
@@ -508,6 +510,19 @@ u=¿?\\
 u=a+d(n-1)=4+2(15-1)=4+2(14)=4+28=32\\
 u=32
 \]</span></p>
+<p><strong>Aplicado</strong>. Debe realizar unos pagos de manera mensual, siendo 12 el número total de estos. Sabe que el primero es de <span class="math inline">\(\$250\)</span>, el segundo de <span class="math inline">\(\$240\)</span> y el tercero de <span class="math inline">\(\$230\)</span>. ¿De cuánto será el último pago?</p>
+<p><strong>R:</strong>. Primero, obtenemos la distancia entre términos y enseguida organizamos los datos. La distancia es fácil obtenerla, ya que sabemos que es la diferencia entre términos. El primero es 250 y el segundo es 240, es decir, <span class="math inline">\(240-250=-10\)</span>; por lo cual hay una diferencia negativa de <span class="math inline">\(\10\)</span>. Ahora organicemos:</p>
+<p><span class="math display">\[
+n=12\ pagos\\
+a=250\\
+d=-10\\
+u=?
+\]</span></p>
+<p>Ahora calculamos el último término con la fórmula que toca:</p>
+<p><span class="math display">\[
+u=a+d(n-1)=250+(-10)(12-1)=250+(-10)(11)=250-110=140
+\]</span></p>
+<p>El último pago será de <span class="math inline">\(\$140\)</span>.</p>
 </div>
 <div id="cálculo-del-primer-término" class="section level3">
 <h3>Cálculo del primer término</h3>
@@ -561,9 +576,88 @@ n=\frac{u-a}{d}+1 = \frac{32-4}{2}+1=\frac{28}{2}+1=14+1=15\\
 n=15
 \]</span></p>
 </div>
+<div id="suma-de-una-progresión-aritmética" class="section level3">
+<h3>Suma de una progresión aritmética</h3>
+<p>Así como podemos calcular cualquier término, también es posible encontrar la suma de todos los términos en una progresión. La fórmula que nos permite dicho cálculo es :</p>
+<p><span class="math display">\[
+S=\frac{n(a+u)}{2}
+\]</span></p>
+<p>Veamos unos ejemplos:</p>
+<div id="ejemplos" class="section level4">
+<h4>Ejemplos</h4>
+<p>Encontremos la suma de los primeros treinta términos de la progresión aritmética <span class="math inline">\(15;21;27;...\)</span></p>
+<p>Lo primero que debemos hacer es encontrar el último número a partir de los datos. Sabemos que el primero es 15 y el segundo es 21, por lo tanto la distancia existente es de <span class="math inline">\(21-15=6\)</span>. Podemos saber la distancia restando el primer elemento del segundo. Ahora encontremos el último término aplicando la fórmula que corresponde:</p>
+<p><span class="math display">\[
+n=30\\
+a=15\\
+d=6\\
+u=?\\
+\ \\
+u=a+d(n-1)=15+6(30-1)=15+6(29)=15+174=189\\
+\ \\
+u=189
+\]</span></p>
+<p>Ahora que ya tenemos al último término, apliquemos la fórmula de la suma:</p>
+<p><span class="math display">\[
+S=\frac{n(a+u)}{2}=\frac{30(15+189)}{2}=\frac{30(204)}{2}=\frac{6120}{2}=3060
+\]</span></p>
+<p><strong>Aplicado</strong>. Supongamos que tenemos que realizar 10 pagos con uno inicial por <span class="math inline">\(\$650\)</span>. Sabemos que también irá disminuyendo el valor del pago por una diferencia de <span class="math inline">\(\$25\)</span>. ¿Cuál será el valor total de la deuda?</p>
+<p>Primero debemos encontrar el valor del último pago. Para ello utilizamos la fórmula del último término. Cuando ya lo tengamos podemos calcular la sumatoria.</p>
+<p><span class="math display">\[
+a=650\\
+d=-25\\
+n=10\\
+u=?\\
+\ \\
+u=a+d(n-1) \rightarrow 650+(-25)(10-1)=650+(-225)=425\\
+\ \\
+u=425
+\]</span></p>
+<p>Calculemos el valor de la suma de la progresión:</p>
+<p><span class="math display">\[
+S=\frac{n(a+u)}{2}=\frac{10(650+425)}{2}=\frac{10(1075)}{2}=\frac{10750}{2}=5375
+\]</span></p>
+<p>El valor total de los pagos es de <span class="math inline">\(\$5,375\)</span>.</p>
+</div>
+</div>
 </div>
 <div id="progresiones-geométricas." class="section level2">
 <h2>Progresiones geométricas.</h2>
+<p>Una progresión geométrica es una sucesión de términos, en la que cualquier término posterior al primero puede obtenerse del anterior, multiplicando (o dividiendo) un número constante llamado razón ( <strong>r</strong>). Así, por ejemplo:</p>
+<p><span class="math display">\[
+4,12,36,108,...
+\]</span></p>
+<p>En esta secuencia podemos ver que el primer número es 4 y el siguiente es 12. Podríamos creer que es una progresión aritmética con distancia de 8. Eso haría que el tercer término fuera 20. Pero no es así. Esto se debe a que la progresión no es aritmética, sino geométrica. Así como la distancia entre términos de la progresión aritmética se obtiene restándole el primer término al segundo, en la geométrica se obtiene dividiendo el segundo término entre el primero:</p>
+<p><span class="math display">\[
+r=\frac{12}{4}=3\\
+\ \\
+r=3
+\]</span></p>
+<p>Solo que no se le conoce como distancia, si no como <em>razón</em>. Sabiendo esto, tomemos el segundo término y multipliquémoslo por la razón. Esto debe dar como resultado el tercer término:</p>
+<p><span class="math display">\[
+(12)(3)=36;\\
+(36)(3)=108;\\
+(108)(3)=324;\\
+...
+\]</span></p>
+<p>Sabiendo esto, enunciamos las fórmulas que nos permitirán calcular el último, el primero o el total de términos, la razón sin tener la progresión y la suma de todos ellos.</p>
+</div>
+<div id="último-término" class="section level2">
+<h2>Último término</h2>
+<p><span class="math display">\[
+u=ar^{n-1}
+\]</span></p>
+<p>Por ejemplo, encontremos cuál es el último término de una progresión de 6 números cuyo primero es 5 y la razón es de 8.</p>
+<p><span class="math display">\[
+a=5\\
+n=6\\
+r=8\\
+u=?\\
+\ \\
+u=ar^{n-1}=5(8)^{6-1}=5(8)^5=5(32768)=163840\\
+\ \\
+u=163,840
+\]</span></p>
 </div>
 <div id="logaritmos." class="section level2">
 <h2>Logaritmos.</h2>
