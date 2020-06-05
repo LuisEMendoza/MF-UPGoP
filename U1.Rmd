@@ -306,7 +306,7 @@ $$
 
 El valor total de los pagos es de $\$5,375$.
 
-## Progresiones geométricas.
+## Progresiones geométricas
 
 Una progresión geométrica es una sucesión de términos, en la que cualquier término posterior al primero puede obtenerse del anterior, multiplicando (o dividiendo) un número constante llamado razón ( __r__). Así, por ejemplo: 
 
@@ -333,7 +333,7 @@ $$
 
 Sabiendo esto, enunciamos las fórmulas que nos permitirán calcular el último, el primero o el total de términos, la razón sin tener la progresión y la suma de todos ellos.
 
-## Último término
+### Último término
 
 $$
 u=ar^{n-1}
@@ -350,6 +350,16 @@ u=?\\
 u=ar^{n-1}=5(8)^{6-1}=5(8)^5=5(32768)=163840\\
 \ \\
 u=163,840
+$$
+
+El crecimiento en una progresión geométrica es, por mucho, más acelerado y acusado que en una aritmética. 
+
+### Primer término
+
+Necesitamos despejar la fórmula anterior:
+
+$$
+u=ar^{n-1} \rightarrow a=\frac{u}{r^{n-1}}
 $$
 
 ## Logaritmos.

@@ -351,8 +351,10 @@ $(document).ready(function () {
 <li><a href="#cálculo-del-número-de-términos">Cálculo del número de términos</a></li>
 <li><a href="#suma-de-una-progresión-aritmética">Suma de una progresión aritmética</a></li>
 </ul></li>
-<li><a href="#progresiones-geométricas.">Progresiones geométricas.</a></li>
+<li><a href="#progresiones-geométricas">Progresiones geométricas</a><ul>
 <li><a href="#último-término">Último término</a></li>
+<li><a href="#primer-término">Primer término</a></li>
+</ul></li>
 <li><a href="#logaritmos.">Logaritmos.</a></li>
 </ul>
 </div>
@@ -621,8 +623,8 @@ S=\frac{n(a+u)}{2}=\frac{10(650+425)}{2}=\frac{10(1075)}{2}=\frac{10750}{2}=5375
 </div>
 </div>
 </div>
-<div id="progresiones-geométricas." class="section level2">
-<h2>Progresiones geométricas.</h2>
+<div id="progresiones-geométricas" class="section level2">
+<h2>Progresiones geométricas</h2>
 <p>Una progresión geométrica es una sucesión de términos, en la que cualquier término posterior al primero puede obtenerse del anterior, multiplicando (o dividiendo) un número constante llamado razón ( <strong>r</strong>). Así, por ejemplo:</p>
 <p><span class="math display">\[
 4,12,36,108,...
@@ -641,9 +643,8 @@ r=3
 ...
 \]</span></p>
 <p>Sabiendo esto, enunciamos las fórmulas que nos permitirán calcular el último, el primero o el total de términos, la razón sin tener la progresión y la suma de todos ellos.</p>
-</div>
-<div id="último-término" class="section level2">
-<h2>Último término</h2>
+<div id="último-término" class="section level3">
+<h3>Último término</h3>
 <p><span class="math display">\[
 u=ar^{n-1}
 \]</span></p>
@@ -658,6 +659,15 @@ u=ar^{n-1}=5(8)^{6-1}=5(8)^5=5(32768)=163840\\
 \ \\
 u=163,840
 \]</span></p>
+<p>El crecimiento en una progresión geométrica es, por mucho, más acelerado y acusado que en una aritmética.</p>
+</div>
+<div id="primer-término" class="section level3">
+<h3>Primer término</h3>
+<p>Necesitamos despejar la fórmula anterior:</p>
+<p><span class="math display">\[
+u=ar^{n-1} \rightarrow a=\frac{u}{r^{n-1}}
+\]</span></p>
+</div>
 </div>
 <div id="logaritmos." class="section level2">
 <h2>Logaritmos.</h2>
