@@ -352,10 +352,22 @@ $(document).ready(function () {
 <li><a href="#suma-de-una-progresión-aritmética">Suma de una progresión aritmética</a></li>
 </ul></li>
 <li><a href="#progresiones-geométricas">Progresiones geométricas</a><ul>
+<li><a href="#progresión-creciente-y-decreciente">Progresión creciente y decreciente</a></li>
 <li><a href="#último-término">Último término</a></li>
 <li><a href="#primer-término">Primer término</a></li>
+<li><a href="#cálculo-de-la-razón">Cálculo de la razón</a></li>
+<li><a href="#cálculo-del-número-de-términos-1">Cálculo del número de términos</a></li>
+<li><a href="#suma-de-los-términos-de-una-progresión-geométrica">Suma de los términos de una progresión geométrica</a></li>
 </ul></li>
-<li><a href="#logaritmos.">Logaritmos.</a></li>
+<li><a href="#progresión-geométrica-infinita">Progresión geométrica infinita</a></li>
+<li><a href="#logaritmos">Logaritmos</a><ul>
+<li><a href="#propiedad-1">Propiedad 1</a></li>
+<li><a href="#propiedad-2">Propiedad 2</a></li>
+<li><a href="#propiedad-3">Propiedad 3</a></li>
+<li><a href="#propiedad-4">Propiedad 4</a></li>
+<li><a href="#propiedad-5">Propiedad 5</a></li>
+<li><a href="#ecuaciones-logarítmicas">Ecuaciones logarítmicas</a></li>
+</ul></li>
 </ul>
 </div>
 
@@ -643,6 +655,10 @@ r=3
 ...
 \]</span></p>
 <p>Sabiendo esto, enunciamos las fórmulas que nos permitirán calcular el último, el primero o el total de términos, la razón sin tener la progresión y la suma de todos ellos.</p>
+<div id="progresión-creciente-y-decreciente" class="section level3">
+<h3>Progresión creciente y decreciente</h3>
+<p>Muy importante notar que ciertas fórmulas posteriores van a cambiar en función de si la progresión tiene una razón menor o mayor a 1. Las progresiones con razón mayor a 1 son crecientes, es decir, siempre van hacia arriba o teniendo valores mayores cada vez. El caso contrario es cuando la razón es menor a 1, siendo pues una progresión decreciente, que va disminuyendo en lugar de crecer.</p>
+</div>
 <div id="último-término" class="section level3">
 <h3>Último término</h3>
 <p><span class="math display">\[
@@ -668,9 +684,198 @@ u=163,840
 u=ar^{n-1} \rightarrow a=\frac{u}{r^{n-1}}
 \]</span></p>
 </div>
+<div id="cálculo-de-la-razón" class="section level3">
+<h3>Cálculo de la razón</h3>
+<p>Despejando la fórmula del último término es posible obtener la que nos permita saber la razón de la progresión.</p>
+<p><span class="math display">\[
+u=ar^{n-1} \rightarrow r^{n-1}=\frac{u}{a} \rightarrow r= \sqrt[n-1]{\frac{u}{a}}
+\]</span></p>
 </div>
-<div id="logaritmos." class="section level2">
-<h2>Logaritmos.</h2>
+<div id="cálculo-del-número-de-términos-1" class="section level3">
+<h3>Cálculo del número de términos</h3>
+<p>De momento solo mostraremos la fórmula para encontrar el número de términos. El método de despeje requiere de conocimientos que aún no se abordan.</p>
+<p><span class="math display">\[
+n=\frac{ln(\frac{u}{a})}{ln(r)}+1
+\]</span></p>
+</div>
+<div id="suma-de-los-términos-de-una-progresión-geométrica" class="section level3">
+<h3>Suma de los términos de una progresión geométrica</h3>
+<p>Pueden darse los dos casos que ya se mencionaron anteriormente, cuando la razón es menor a 1 y cuando es mayor a 1:</p>
+<p><span class="math display">\[
+S=\frac{a-ar^n}{1-r}\ \text{siempre que}\ r&lt;1\\
+\ \\
+S=\frac{ar^n-a}{r-1}\ \text{siempre que}\ r&gt;1
+\]</span></p>
+<p>Entonces, para encontrar la suma de los primeros 10 términos de la progresón geométrica 1000, 1500, 2250, 3375, …</p>
+<p>$$ r=1500 / 1000=1.5\ u=ar<sup>{n-1}=1000(1.5)</sup>{10-1}=1000(1.5)^9=\1000(38.443359375)=38443.359375\  \  r&gt;1, \</p>
+<p>S===\ ==\ =113,330.078125 $$</p>
+</div>
+</div>
+<div id="progresión-geométrica-infinita" class="section level2">
+<h2>Progresión geométrica infinita</h2>
+<p>Es aquel tipo de progresión geométrica cuya razón es menor que 1, el número de términos es ilimitado, pero la suma de sus términos es cuantificable. Por ejemplo, sea la progresión:</p>
+<p><span class="math display">\[
+1,\frac{1}{5},\frac{1}{25},\frac{1}{125},...
+\]</span></p>
+<p>Su razón es 1/5 y el número de sus términos es ilimitado. Consecuentemente, no hay último término; pero sí puede calcularse la suma de sus términos con la fórmula:</p>
+<p><span class="math display">\[
+S=\frac{a}{1-r}
+\]</span></p>
+<p>Así, para la anterior progresión es posible calcular la suma de sus términos, sabiendo que su razón es de 1/5 y su primer término es 1:</p>
+<p><span class="math display">\[
+S=\frac{1}{1-\frac{1}{5}}=\frac{1}{1-0.2}=\frac{1}{0.8}=1.25
+\]</span></p>
+</div>
+<div id="logaritmos" class="section level2">
+<h2>Logaritmos</h2>
+<p>Los logaritmos son funciones muy comunes en las matemáticas financieras. A continuación veremos un conjunto de propiedades que nos permitirán simplificar dichas expresiones logarítmicas.</p>
+<div id="propiedad-1" class="section level3">
+<h3>Propiedad 1</h3>
+<p><span class="math display">\[
+ln(a)+ln(b)=ln(ab)
+\]</span></p>
+<p>Esta propiedad indica que cuando tengamos una suma de logaritmos con argumentos diferentes, podemos simplificarla en un solo logaritmo, multiplicando sus argumentos solamente. Veamos un ejemplo:</p>
+<p><span class="math display">\[
+ln(2x^3)+ln(5x^2)=ln(2x^3\cdot 5x^2)=ln(10x^5)
+\]</span></p>
+<div id="propiedad-1.1" class="section level4">
+<h4>Propiedad 1.1</h4>
+<p>Cuando los argumentos son iguales podemos tratar a las funciones de manera «normal». Esto es, podemos sumarlas:</p>
+<p><span class="math display">\[
+ln(a)+ln(a)=2\cdot ln(a)
+\]</span></p>
+<p>Aunque nada nos impide aplicar la Propiedad 1:</p>
+<p><span class="math display">\[
+ln(a)+ln(a)=ln(a\cdot a)=ln(a)^2
+\]</span></p>
+<p>Posteriormente probaremos que <span class="math inline">\(2ln(a)=ln(a)^2\)</span>.</p>
+</div>
+</div>
+<div id="propiedad-2" class="section level3">
+<h3>Propiedad 2</h3>
+<p><span class="math display">\[
+ln(a)-ln(b)=ln\left(\frac{a}{b}\right)
+\]</span></p>
+<p>Así como la suma de logaritmos es igual a un solo logaritmo con la multiplicación de sus argumentos originales como argumento único, la resta de logaritmos es igual a uno solo pero con el cociente de sus argumentos. Veamos el ejemplo:</p>
+<p><span class="math display">\[
+ln(4x^8)-ln(x^5)=ln\left(\frac{4x^8}{x^5} \right)=ln(4x^3)
+\]</span></p>
+</div>
+<div id="propiedad-3" class="section level3">
+<h3>Propiedad 3</h3>
+<p>Es posible convertir la potencia del argumento en coeficiente del logaritmo y viceversa:</p>
+<p><span class="math display">\[
+ln(a)^n=n\cdot ln(a)
+\]</span></p>
+<p>Veamos un ejemplo:</p>
+<p><span class="math display">\[
+ln(7x)^3=3\cdot ln(7x)
+\]</span></p>
+<p>Esto nos permitirá simplificar ciertas expresiones e incluso resulta de bastante ayuda cuando debamos despejar un exponente.</p>
+</div>
+<div id="propiedad-4" class="section level3">
+<h3>Propiedad 4</h3>
+<p>En ciertas ocasiones nos veremos obligados a despejar el argumento de un logaritmo. Para ello, es necesario contar con algo que nos permita cancelar dicho logaritmo. La función contraria a este es el número de Euler.</p>
+<p><img src="images/FB_IMG_1591643573293.jpg" /></p>
+<p>Conociendo esto, entonces podemos cancelar un logaritmo si le aplicamos el número de Euler, dejando solamente al argumento:</p>
+<p><span class="math display">\[
+e^{ln(a)}=a
+\]</span></p>
+<p><span class="math display">\[
+e^{ln(3x^3)}=3x^3
+\]</span></p>
+</div>
+<div id="propiedad-5" class="section level3">
+<h3>Propiedad 5</h3>
+<p>Así como el logaritmo es cancelado por el número de Euler, también este último puede sr eliminado por el logaritmo.</p>
+<p><span class="math display">\[
+ln(e^{a})=a
+\]</span></p>
+</div>
+<div id="ecuaciones-logarítmicas" class="section level3">
+<h3>Ecuaciones logarítmicas</h3>
+<p>El objetivo es encontrar el valor de una variable que desconocemos, a partir de expresiones que contienen logaritmos en mayor medida y al número de Euler en menor. Veamos algunos ejemplos:</p>
+<div id="ejemplo-1" class="section level4">
+<h4>Ejemplo 1</h4>
+<p>Tenemos la siguiente ecuación logarítmica. Debemos encontrar el valor de <span class="math inline">\(x\)</span>.</p>
+<p><span class="math display">\[
+ln(3x)+ln(2x)=2\\
+\]</span></p>
+<p>El primer paso es identificar la operación que afecta a los logaritmos. Vemos que es una suma, por lo que aplicamos <strong>propiedad 1</strong> al lado izquierdo:</p>
+<p><span class="math display">\[
+ln(3x\cdot 2x)=2 \rightarrow ln(6x^2)=2
+\]</span> El primer objetivo es reducir todos los logaritmos a uno solo. Esto ya se ha conseguido. Ahora ya podemos cancelar al logaritmo restante. Esto se consigue con la <strong>propiedad 4</strong>, por lo que aplicamos el número de Euler a ambos lados de la ecuación, para evitar alterarla:</p>
+<p><span class="math display">\[
+ln(6x^2)=2\\ 
+e^{ln(6x^2)}=e^2\\
+6x^2=e^2
+\]</span></p>
+<p>Valuamos el exponencial (Euler) restante, sabiendo que <span class="math inline">\(e=2.71828\)</span> o bien, con la calculadora científica y la función <span class="math inline">\(e\)</span>:</p>
+<p><span class="math display">\[
+6x^2=7.389
+\]</span></p>
+<p>Como objetivo final, despejamos y obtenemos el valor de <span class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[
+6x^2=7.389\\
+x^2=\frac{7.389}{6}=1.2315\\
+x=\sqrt{1.2315}\\
+\ \\
+x=1.1097
+\]</span></p>
+</div>
+<div id="ejemplo-2" class="section level4">
+<h4>Ejemplo 2</h4>
+<p>Encontrar el valor de <span class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[
+ln(6x^4)-ln(3x)=3\\
+\]</span></p>
+<p>Primer objetivo: reducir los logaritmos. Primer paso, identificar que es una resta. Segundo paso, identificar la propiedad que permita la reducción: <strong>propiedad 2</strong>. Tercer paso, aplicar la propiedad y simplificar, si es posible:</p>
+<p><span class="math display">\[
+ln(6x^4)-ln(3x)=3\\
+ln\left(\frac{6x^4}{3x}\right)=3\\
+ln(3x^3)=3
+\]</span></p>
+<p>Segundo objetivo: cancelar el logaritmo restante. Primer paso, aplicar el número de Euler a ambos lados. Segundo paso, aplicar la <strong>propiedad 4</strong> y cancelar el logaritmo. Tercer paso, valuar el exponencial que queda.</p>
+<p><span class="math display">\[
+e^{ln(3x^3)}=e^3\\
+3x^3=e^3\\
+3x^3=20.0855
+\]</span></p>
+<p>Tercer objetivo: encontrar el valor de <span class="math inline">\(x\)</span>:</p>
+<p><span class="math display">\[
+3x^3=20.0855\\
+x^3=\left( \frac{20.0855}{3}\right)=6.695\\
+x=\sqrt[3]{6.695}\\
+\ \\
+x=1.8847
+\]</span></p>
+</div>
+<div id="ejemplo-3" class="section level4">
+<h4>Ejemplo 3</h4>
+<p>Ahora tendremos una variación. Los argumentos serán iguales:</p>
+<p><span class="math display">\[
+ln(3x)+ln(3x)=1
+\]</span></p>
+<p>Primer objetivo: reducir los logaritmos. Como podemos notarlo, es posible sumar los logaritmos de manera «natural» usando la <strong>propiedad 1.1</strong>:</p>
+<p><span class="math display">\[
+ln(3x)+ln(3x)=1\\
+2ln(3x)=1
+\]</span></p>
+<p>Aquí debemos despejar el logaritmo antes de intentar cancelarlo, ya que ese <span class="math inline">\(2\)</span> lo impide.</p>
+<p><span class="math display">\[
+2ln(3x)=1\\
+ln(3x)=\frac{1}{2}=0.5\\
+\]</span></p>
+<p>Ya podemos cancelar el logaritmo aplicando Euler a ambos lados:</p>
+<p><span class="math display">\[
+e^{ln(3x)}=e^{0.5}\\
+3x=e^{0.5}=1.6487\\
+x=\frac{1.6487}{3}=0.5496\\
+\ \\
+x=0.5496
+\]</span></p>
+</div>
+</div>
 </div>
 
 

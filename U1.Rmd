@@ -333,6 +333,10 @@ $$
 
 Sabiendo esto, enunciamos las fórmulas que nos permitirán calcular el último, el primero o el total de términos, la razón sin tener la progresión y la suma de todos ellos.
 
+### Progresión  creciente y decreciente
+
+Muy importante notar que ciertas fórmulas posteriores van a cambiar en función de si la progresión tiene una razón menor o mayor a 1. Las progresiones con razón mayor a 1 son crecientes, es decir, siempre van hacia arriba o teniendo valores mayores cada vez. El caso contrario es cuando la razón es menor a 1, siendo pues una progresión decreciente, que va disminuyendo en lugar de crecer.
+
 ### Último término
 
 $$
@@ -362,7 +366,269 @@ $$
 u=ar^{n-1} \rightarrow a=\frac{u}{r^{n-1}}
 $$
 
-## Logaritmos.
+### Cálculo de la razón
+
+Despejando la fórmula del último término es posible obtener la que nos permita saber la razón de la progresión.
+
+$$
+u=ar^{n-1} \rightarrow r^{n-1}=\frac{u}{a} \rightarrow r= \sqrt[n-1]{\frac{u}{a}}
+$$
+
+### Cálculo del número de términos
+
+De momento solo mostraremos la fórmula para encontrar el número de términos. El método de despeje requiere de conocimientos que aún no se abordan.
+
+$$
+n=\frac{ln(\frac{u}{a})}{ln(r)}+1
+$$
+
+### Suma de los términos de una progresión geométrica
+
+Pueden darse los dos casos que ya se mencionaron anteriormente, cuando la razón es menor a 1 y cuando es mayor a 1:
+
+$$
+S=\frac{a-ar^n}{1-r}\ \text{siempre que}\ r<1\\
+\ \\
+S=\frac{ar^n-a}{r-1}\ \text{siempre que}\ r>1
+$$
+
+Entonces, para encontrar la suma de los primeros 10 términos de la progresón geométrica 1000, 1500,  2250, 3375, ...
+
+$$
+r=1500 / 1000=1.5\\
+u=ar^{n-1}=1000(1.5)^{10-1}=1000(1.5)^9=\\1000(38.443359375)=38443.359375\\
+\ \\
+\text{al ser } r>1, \text{entonces }\\
+
+S=\frac{ar^n-a}{r-1}=\frac{1000(1.5)^{10}-1000}{1.5-1}=\frac{1000(1.5)^{10}-1000}{1.5-1}\\
+\frac{1000(57.6650390625)-1000}{0.5}=\frac{(57665.0390625)-1000}{0.5}=\\
+\frac{56665.0390625}{0.5}=113,330.078125
+$$
+
+## Progresión geométrica infinita
+
+Es aquel tipo de progresión geométrica cuya razón es menor que 1, el número de términos es ilimitado, pero la suma de sus términos es cuantificable. Por ejemplo, sea la progresión:
+
+$$
+1,\frac{1}{5},\frac{1}{25},\frac{1}{125},...
+$$
+
+Su razón es 1/5 y el número de sus términos es ilimitado. Consecuentemente, no hay último término; pero sí puede calcularse la suma de sus términos con la fórmula:
+
+$$
+S=\frac{a}{1-r}
+$$
+
+Así, para la anterior progresión es posible calcular la suma de sus términos, sabiendo que su razón es de 1/5 y su primer término es 1:
+
+$$
+S=\frac{1}{1-\frac{1}{5}}=\frac{1}{1-0.2}=\frac{1}{0.8}=1.25
+$$
+
+## Logaritmos
+
+Los logaritmos son funciones muy comunes en las matemáticas financieras. A continuación veremos un conjunto de propiedades que nos permitirán simplificar dichas expresiones logarítmicas.
+
+### Propiedad 1
+
+$$
+ln(a)+ln(b)=ln(ab)
+$$
+
+Esta propiedad indica que cuando tengamos una suma de logaritmos con argumentos diferentes, podemos simplificarla en un solo logaritmo, multiplicando sus argumentos solamente. Veamos un ejemplo:
+
+$$
+ln(2x^3)+ln(5x^2)=ln(2x^3\cdot 5x^2)=ln(10x^5)
+$$
+
+#### Propiedad 1.1
+
+Cuando los argumentos son iguales podemos tratar a las funciones de manera «normal». Esto es, podemos sumarlas:
+
+$$
+ln(a)+ln(a)=2\cdot ln(a)
+$$
+
+Aunque nada nos impide aplicar la Propiedad 1:
+
+$$
+ln(a)+ln(a)=ln(a\cdot a)=ln(a)^2
+$$
+
+Posteriormente probaremos que $2ln(a)=ln(a)^2$.
+
+### Propiedad 2
+
+$$
+ln(a)-ln(b)=ln\left(\frac{a}{b}\right)
+$$
+
+Así como la suma de logaritmos es igual a un solo logaritmo con la multiplicación de sus argumentos originales como argumento único, la resta de logaritmos es igual a uno solo pero con el cociente de sus argumentos. Veamos el ejemplo:
+
+$$
+ln(4x^8)-ln(x^5)=ln\left(\frac{4x^8}{x^5} \right)=ln(4x^3)
+$$
+
+### Propiedad 3
+
+Es posible convertir la potencia del argumento en coeficiente del logaritmo y viceversa:
+
+$$
+ln(a)^n=n\cdot ln(a)
+$$
+
+Veamos un ejemplo:
+
+$$
+ln(7x)^3=3\cdot ln(7x)
+$$
+
+Esto nos permitirá simplificar ciertas expresiones e incluso resulta de bastante ayuda cuando debamos despejar un exponente.
+
+### Propiedad 4
+
+En ciertas ocasiones nos veremos obligados a despejar el argumento de un logaritmo. Para ello, es necesario contar con algo que nos permita cancelar dicho logaritmo. La función contraria a este es el número de Euler.
+
+![](images/FB_IMG_1591643573293.jpg)
+
+Conociendo esto, entonces podemos cancelar un logaritmo si le aplicamos el número de Euler, dejando solamente al argumento:
+
+$$
+e^{ln(a)}=a
+$$
+
+$$
+e^{ln(3x^3)}=3x^3
+$$
+
+### Propiedad 5
+
+Así como el logaritmo es cancelado por el número de Euler, también este último puede sr eliminado por el logaritmo.
+
+$$
+ln(e^{a})=a
+$$
+
+### Ecuaciones logarítmicas
+
+El objetivo es encontrar el valor de una variable que desconocemos, a partir de expresiones que contienen logaritmos en mayor medida y al número de Euler en menor. Veamos algunos ejemplos:
+
+#### Ejemplo 1
+
+Tenemos la siguiente ecuación logarítmica. Debemos encontrar el valor de $x$. 
+
+$$
+ln(3x)+ln(2x)=2\\
+$$
+
+El primer paso es identificar la operación que afecta a los logaritmos. Vemos que es una suma, por lo que aplicamos __propiedad 1__ al lado izquierdo:
+
+$$
+ln(3x\cdot 2x)=2 \rightarrow ln(6x^2)=2
+$$
+El primer objetivo es reducir todos los logaritmos a uno solo. Esto ya se ha conseguido. Ahora ya podemos cancelar al logaritmo restante. Esto se consigue con la __propiedad 4__, por lo que aplicamos el número de Euler a ambos lados de la ecuación, para evitar alterarla:
+
+$$
+ln(6x^2)=2\\ 
+e^{ln(6x^2)}=e^2\\
+6x^2=e^2
+$$
+
+Valuamos el exponencial (Euler) restante, sabiendo que $e=2.71828$ o bien, con la calculadora científica y la función $e$:
+
+$$
+6x^2=7.389
+$$
+
+Como objetivo final, despejamos y obtenemos el valor de $x$:
+
+$$
+6x^2=7.389\\
+x^2=\frac{7.389}{6}=1.2315\\
+x=\sqrt{1.2315}\\
+\ \\
+x=1.1097
+$$
+
+#### Ejemplo 2
+
+Encontrar el valor de $x$:
+
+$$
+ln(6x^4)-ln(3x)=3\\
+$$
+
+Primer objetivo: reducir los logaritmos. Primer paso, identificar que es una resta. Segundo paso, identificar la propiedad que permita la reducción: __propiedad 2__. Tercer paso, aplicar la propiedad y simplificar, si es posible:
+
+$$
+ln(6x^4)-ln(3x)=3\\
+ln\left(\frac{6x^4}{3x}\right)=3\\
+ln(3x^3)=3
+$$
+
+Segundo objetivo: cancelar el logaritmo restante. Primer paso, aplicar el número de Euler a ambos lados. Segundo paso, aplicar la __propiedad 4__ y cancelar el logaritmo. Tercer paso, valuar el exponencial que queda.
+
+$$
+e^{ln(3x^3)}=e^3\\
+3x^3=e^3\\
+3x^3=20.0855
+$$
+
+Tercer objetivo: encontrar el valor de $x$:
+
+$$
+3x^3=20.0855\\
+x^3=\left( \frac{20.0855}{3}\right)=6.695\\
+x=\sqrt[3]{6.695}\\
+\ \\
+x=1.8847
+$$
+
+#### Ejemplo 3
+
+Ahora tendremos una variación. Los argumentos serán iguales:
+
+$$
+ln(3x)+ln(3x)=1
+$$
+
+Primer objetivo: reducir los logaritmos. Como podemos notarlo, es posible sumar los logaritmos de manera «natural» usando la __propiedad 1.1__:
+
+$$
+ln(3x)+ln(3x)=1\\
+2ln(3x)=1
+$$
+
+Aquí debemos despejar el logaritmo antes de intentar cancelarlo, ya que ese $2$ lo impide.
+
+$$
+2ln(3x)=1\\
+ln(3x)=\frac{1}{2}=0.5\\
+$$
+
+Ya podemos cancelar el logaritmo aplicando Euler a ambos lados:
+
+$$
+e^{ln(3x)}=e^{0.5}\\
+3x=e^{0.5}=1.6487\\
+x=\frac{1.6487}{3}=0.5496\\
+\ \\
+x=0.5496
+$$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
