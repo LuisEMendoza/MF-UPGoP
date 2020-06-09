@@ -616,11 +616,80 @@ x=\frac{1.6487}{3}=0.5496\\
 x=0.5496
 $$
 
+#### Ejemplo 4
 
+Veamos una variación que incluya no dos, si no tres logaritmos:
 
+$$
+3ln(2x)-ln(x)+2ln(2x)=4
+$$
 
+Notemos que hay dos logaritmos con argumentos iguales. Esos los podemos sumar de manera normal:
 
+$$
+3ln(2x)-ln(x)+2ln(2x)=4\\
+3ln(2x)+2ln(2x)-ln(x)=4\\
+5ln(2x)-ln(x)=4
+$$
 
+El siguiente paso sería reducir los logaritmos, pero el coeficiente del primero (el número 5), lo impide. Hagamos uso de la __propiedad 3__ para  cambiarlo de lugar y luego desarrollamos la potencia:
+
+$$
+5ln(2x)-ln(x)=4\\
+ln(2x)^5-ln(x)=4\\
+ln(2^5x^5)-ln(x)=4\\
+ln(32x^5)-ln(x)=4
+$$
+
+Aplicamos la __propiedad 2__:
+
+$$
+ln(32x^5)-ln(x)=4\\
+ln \left( \frac{32x^5}{x} \right)=4\\
+ln(32x^4)=4
+$$
+
+Cancelamos el logaritmo con la __propiedad 4__:
+
+$$
+ln(32x^4)=4\\
+e^{ln(32x^4)}=e^4\\
+32x^4=e^4
+$$
+
+Valuamos la función Euler y despejamos la $x$:
+
+$$
+32x^4=54.5981\\
+x^4=\frac{54.5981}{32}=1.7062\\
+x=\sqrt[4]{1.7062}=1.1429\\
+\ \\
+x=1.1429
+$$
+
+#### Ejemplo 5
+
+Veamos el último tipo de casos que pueden presentarse, ecuaciones exponenciales:
+
+$$
+e^{2x}=10\\
+$$
+
+Aplicando la __propiedad 5__ podemos cancelar el exponencial:
+
+$$
+ln(e^{2x})=ln(10)\\
+2x=ln(10)
+$$
+
+Valuamos y despejamos:
+
+$$
+2x=ln(10)=2.3025\\
+2x=2.3025\\
+x=\frac{2.3025}{2}\\
+x=1.1513
+$$
 
 
 
