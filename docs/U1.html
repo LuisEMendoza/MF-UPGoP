@@ -707,16 +707,8 @@ S=\frac{a-ar^n}{1-r}\ \text{siempre que}\ r&lt;1\\
 S=\frac{ar^n-a}{r-1}\ \text{siempre que}\ r&gt;1
 \]</span></p>
 <p>Entonces, para encontrar la suma de los primeros 10 términos de la progresón geométrica 1000, 1500, 2250, 3375, …</p>
-<p><span class="math display">\[
-r=1500 / 1000=1.5\\
-u=ar^{n-1}=1000(1.5)^{10-1}=1000(1.5)^9=\\1000(38.443359375)=38443.359375\\
-\]</span></p>
-<p>Al ser r&gt;1, entonces</p>
-<p><span class="math display">\[
-S=\frac{ar^n-a}{r-1}=\frac{1000(1.5)^{10}-1000}{1.5-1}=\frac{1000(1.5)^{10}-1000}{1.5-1}\\
-\frac{1000(57.6650390625)-1000}{0.5}=\frac{(57665.0390625)-1000}{0.5}=\\
-\frac{56665.0390625}{0.5}=113,330.078125
-\]</span></p>
+<p>$$ r=1500 / 1000=1.5\ u=ar<sup>{n-1}=1000(1.5)</sup>{10-1}=1000(1.5)^9=\1000(38.443359375)=38443.359375\  \  r&gt;1, \</p>
+<p>S===\ ==\ =113,330.078125 $$</p>
 </div>
 </div>
 <div id="progresión-geométrica-infinita" class="section level2">
@@ -885,61 +877,9 @@ x=0.5496
 </div>
 <div id="ejemplo-4" class="section level4">
 <h4>Ejemplo 4</h4>
-<p>Veamos una variación que incluya no dos, si no tres logaritmos:</p>
+<p>Veamos un caso diferente:</p>
 <p><span class="math display">\[
-3ln(2x)-ln(x)+2ln(2x)=4
-\]</span></p>
-<p>Notemos que hay dos logaritmos con argumentos iguales. Esos los podemos sumar de manera normal:</p>
-<p><span class="math display">\[
-3ln(2x)-ln(x)+2ln(2x)=4\\
-3ln(2x)+2ln(2x)-ln(x)=4\\
-5ln(2x)-ln(x)=4
-\]</span></p>
-<p>El siguiente paso sería reducir los logaritmos, pero el coeficiente del primero (el número 5), lo impide. Hagamos uso de la <strong>propiedad 3</strong> para cambiarlo de lugar y luego desarrollamos la potencia:</p>
-<p><span class="math display">\[
-5ln(2x)-ln(x)=4\\
-ln(2x)^5-ln(x)=4\\
-ln(2^5x^5)-ln(x)=4\\
-ln(32x^5)-ln(x)=4
-\]</span></p>
-<p>Aplicamos la <strong>propiedad 2</strong>:</p>
-<p><span class="math display">\[
-ln(32x^5)-ln(x)=4\\
-ln \left( \frac{32x^5}{x} \right)=4\\
-ln(32x^4)=4
-\]</span></p>
-<p>Cancelamos el logaritmo con la <strong>propiedad 4</strong>:</p>
-<p><span class="math display">\[
-ln(32x^4)=4\\
-e^{ln(32x^4)}=e^4\\
-32x^4=e^4
-\]</span></p>
-<p>Valuamos la función Euler y despejamos la <span class="math inline">\(x\)</span>:</p>
-<p><span class="math display">\[
-32x^4=54.5981\\
-x^4=\frac{54.5981}{32}=1.7062\\
-x=\sqrt[4]{1.7062}=1.1429\\
-\ \\
-x=1.1429
-\]</span></p>
-</div>
-<div id="ejemplo-5" class="section level4">
-<h4>Ejemplo 5</h4>
-<p>Veamos el último tipo de casos que pueden presentarse, ecuaciones exponenciales:</p>
-<p><span class="math display">\[
-e^{2x}=10\\
-\]</span></p>
-<p>Aplicando la <strong>propiedad 5</strong> podemos cancelar el exponencial:</p>
-<p><span class="math display">\[
-ln(e^{2x})=ln(10)\\
-2x=ln(10)
-\]</span></p>
-<p>Valuamos y despejamos:</p>
-<p><span class="math display">\[
-2x=ln(10)=2.3025\\
-2x=2.3025\\
-x=\frac{2.3025}{2}\\
-x=1.1513
+2ln(2x)-ln(x)+3ln(2x)=2\\
 \]</span></p>
 </div>
 </div>

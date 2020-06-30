@@ -5,9 +5,132 @@ output:
     toc: true
 ---
 
-## Introducción.
+## Introducción
+
+El dinero es una de las invenciones más importantes de la Humanidad. Permite la adquisición de bienes y servicios sin la necesidad de intercambiar otros bienes y servicios (el famoso trueque). Sin embargo, utilizar dinero que no es propio tiene un costo, una especie de «renta»: el interés. Existen dos tipos de interés, el simple (que es el que nos interesa ahora) y el complejo, el cual se deja para después. 
 
 ## Interés Simple.
+
+### Cálculo del interés
+
+El cálculo de cualquier interés implica el uso de cuatro o a veces cinco conceptos: el capital (cantidad prestada o el valor del bien o servicio recibido), el interés como tal (cantidad de dinero cobrado por el uso del capital, digamos que es una especie de renta), el plazo (tiempo que nos tardaremos en pagar la deuda o utilizando el capital) y la tasa de interés (porcentaje del capital que será cobrado por cada periodo de tiempo que lo utilicemos). El quinto elemento es ocasional y se corresponde al monto (M), el cual es la suma de capital más el interés $M=C+I$. La fórmula es bastante sencilla:
+
+$$
+I=Cit
+$$
+
+Donde: $I= $interés, expresado en dinero; $C= $capital, expresado en dinero; $i= $tasa de interés, aunque se escriba como un porcentaje, debe usarse convertido a decimal; $t= $plazo, expresado en periodos (días, semanas, meses, semestres, años, etc). Llegados a este punto, es importante mencionar que la tasa de interés es la que «domina» en cuanto a los periodos de tiempo, es decir, procuremos que el tiempo concuerde con la tasa. Si esta es anual, dejemos el tiempo en plazos anuales. Si es mensual, convirtamos el plazo en periodos mensuales, sucesivamente.
+
+#### Ejemplos básicos
+
+>Supongamos que hemos solicitado un crédito por $\$10,000$ y nos hemos comprometido a pagarlos en seis meses. El banco nos ha prometido una tasa de interés del 7% mensual. ¿Cuánto pagaremos por intereses?¿Cuánto pagaremos en total?
+
+Pues bien, llamémosle a las cosas por su nombre. El dinero conseguido a crédito es el _capital_, el _plazo_ consiste de seis periodos mensuales y la _tasa de interés_ es del 7% por periodo, es decir, es del 0.07 (si en algún momento no estamos seguros, basta con dividir el porcentaje entre 100 para obtener su equivalente en decimales: $7/100=0.07$). Apliquemos la fórmula con $C=10,000$; $i=0.07$ y $t=6$ periodos:
+
+$$
+I=Cit\\
+I=(10,000)(0.07)(6)=4200
+$$
+
+El interés a pagar al final del plazo será de $\$4,200$. Por otro lado, para saber la cantidad total a pagar (lo que a partir de ahora llamaremos _monto_, __M__), es necesario sumar el interés generado más el capital:
+
+$$
+M=C+I=10,000+4,200=14,200
+$$
+
+>Hemos comprado a crédito un teléfono celular, cuyo valor de contado es de $\$$8,900. El plazo a pagar es de 9 meses y la tienda nos asegura una tasa del 65% anual. ¿Cúal será el interés a pagar?
+
+Comencemos organizando la información: el capital $C=8,900$, el plazo es $t=9$ meses y la tasa $i=65\% =65/100=0.65$ anual. El periodo del plazo no coincide con el periodo de la tasa de interés, por lo que debemos hacer que coincida. Es sencillo, ya que sabemos que 12 meses equivalen a un año, entonces 9 meses equivalen a $9/12=0.75$ años.
+
+Resolvamos:
+
+$$
+I=Cit=(8,900)(0.65)(0.75)=4,338
+$$
+
+El interés a pagar por el teléfono es de $\$$4,338.
+
+### El siempre cambiante tiempo
+
+Los cálculos para obtener el interés simple son sencillos. Pero existe un aspecto que puede llegar a ser confuso: los periodos de tiempo del plazo. Esto se debe a que se utilizan dos tipos de calendario o año en los cálculos financieros: el calendario o año exacto y el calendario o año bancario o comercial. El primero toma al tiempo tal cual lo conocemos, directo del calendario o almanaque. El segundo, por lo contrario, simplifica las cosas. Veamos unos ejemplos.
+
+Para el año exacto, desde el primer día del mes de julio hasta el último día del año transcurren 184 días (31 días contenidos en julio, 31 en agosto, 30 en septiembre, 31 en octubre, 30 en noviembre y 31 en diciembre). 
+
+Para el año comercial transcurren 180 días, ya que no importa de qué mes hablemos, todos tienen __30 días__.
+
+¿Qué podemos concluir de esto? Para el año comercial, cada mes tiene 30 días, por lo tanto cada año cuenta con 360. A partir de ahora, se usará solo el año comercial.
+
+### Cálculo del capital a partir del interés
+
+En ocasiones desearemos calcular la cantidad original que dio pauta al interés, conociendo, eso sí, el plazo y la tasa. Para ello utilizaremos la fórmula del interés despejado de acuerdo a nuestro objetivo:
+
+$$
+C=\frac{I}{it}
+$$
+
+#### Ejemplo
+
+>Resulta que por un préstamo nos cobran 6,660 pesos al final de su plazo, que fue de 2 años y medio. La tasa de interés era del 8% mensual. ¿Cuánto habíamos solicitado en préstamo al inicio?
+
+Organizando la información notamos que el interés $I=6,200$, la tasa es $i=8\%=8/100=0.08$ mensual y el plazo es de $t=2.5$ años $=2.5*12=30$ meses. Importante recalcar que la tasa es mensual, por ello convertimos los años a meses (sabiendo que un año contiene 12 meses, entonces dos años contendrán 24 y medio año equivale a 6 meses, por lo tanto 2.5 años = 30 meses, cálculo simplificado multiplicando los años por 12).
+
+Aplicamos la fórmula:
+
+$$
+C=\frac{I}{it}=\frac{(6,660)}{(0.08)(30)}=2,775
+$$
+
+### Cálculo de la tasa de interés
+
+Puede darse el caso de queramos conocer la tasa cobrada para un artículo adquirido a crédito, conociendo el precio original y los intereses cobrados, además del plazo transcurrido. Para ello, basta la siguiente fórmula derivada de la original:
+
+$$
+i=\frac{I}{Ct}
+$$
+
+#### Ejemplo
+
+>Tomemos como ejemplo un teléfono de marca china que comienza en X y termina en iaomi, vendido en ciertas tiendas con una llave antigua como imagen. El precio de contado es de 5,999 pesos (C), mientras que el precio a cŕedito es de 9,238 pesos (M), dándose un plazo de 36 quincenas (t). ¿cuál es la tasa de interés que nos están otorgando?
+
+Bien, tenemos un monto (M) como dato, además del precio de contado (que tomaremos como el capital) y un plazo (t) expresado en quincenas. Sabemos que el monto es la suma de capital e interés, por lo tanto, el interés es $I=M-C=9,238-5,999=3,239$. Apliquemos la fórmula:
+
+$$
+i=\frac{I}{Ct}=\frac{(3,239)}{(5,999)(36)}=0.01499\approx 0.015=1.5\% \ quincenal
+$$
+
+Si quisiéramos calcular la tasa de interés mensual, cambiamos las 36 quincenas por su equivalente en meses: 18.
+
+$$
+i=\frac{I}{Ct}=\frac{(3,239)}{(5,999)(18)}=0.0299\approx 0.03=3\% \ mensual
+$$
+
+Y si quisiéramos el cálculo anual, pues lo mismo:
+
+$$
+i=\frac{I}{Ct}=\frac{(3,239)}{(5,999)(18/12)}=\frac{(3,239)}{(5,999)(1.5)}=0.3599\approx 0.36=36\% \ anual
+$$
+
+No son cantidades tan exageradas, considerando que hacer uso de un crédito es utilizar dinero que no es propio pero que agiliza ciertas operaciones.
+
+### Cálculo del plazo
+
+¿Cuánto tiempo queremos que dure una operación a crédito? Pues dependerá de lo que queramos ganar. La fórmula es la siguiente:
+
+$$
+t=\frac{I}{Ci}
+$$
+
+#### Ejemplo
+
+>Hemos incursionado en el negocio de los créditos para adquisición de vehículos (coches) y queremos mantener una política de tasas bajas pero que aún supongan un margen de ganancia superior a la inflación general (en mayo de 2020 es de aproximadamente el 3% anual). Por lo tanto, manejaremos una tasa de interés del 6% anual = 0.06. También hemos diseñado un sistema que permita cobrar 30,000 pesos de intereses por cada 100,000 pesos prestados. ¿Cuál es el plazo adecuado para conseguir estas cifras?
+
+Utilicemos la fórmula y sustituyamos:
+
+$$
+t=\frac{I}{Ci}=\frac{(30,000)}{(100,000)(0.06)}=5
+$$
+
+El plazo que debemos dar para obtener 30,000 pesos por cada 100,000 prestados es de 5 años, manejando una tasa del 6% anual.
 
 ## Monto Simple.
 
