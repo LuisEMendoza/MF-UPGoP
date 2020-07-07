@@ -348,7 +348,9 @@ $(document).ready(function () {
 <li><a href="#cálculo-de-la-tasa-de-interés">Cálculo de la tasa de interés</a></li>
 <li><a href="#cálculo-del-plazo">Cálculo del plazo</a></li>
 </ul></li>
-<li><a href="#monto-simple.">Monto Simple.</a></li>
+<li><a href="#monto-simple.">Monto Simple.</a><ul>
+<li><a href="#cálculo-del-monto">Cálculo del monto</a></li>
+</ul></li>
 <li><a href="#descuento-comercial.">Descuento Comercial.</a></li>
 <li><a href="#descuento-real.">Descuento Real.</a></li>
 </ul>
@@ -464,6 +466,28 @@ t=\frac{I}{Ci}=\frac{(30,000)}{(100,000)(0.06)}=5
 </div>
 <div id="monto-simple." class="section level2">
 <h2>Monto Simple.</h2>
+<p>Como ya se mencionó anteriormente, el monto es el resultado de sumar el capital original y el interés generado por este. Por ejemplo, si una inversión de 10,000 pesos generó 2,300 pesos por intereses, el monto será de 12,300 pesos. Al saber que es una simple suma, la fórmula resulta ser:</p>
+<p><span class="math display">\[
+M=C+I
+\]</span></p>
+<p>Pero si quisiéramos calcular de manera directa el monto, debemos utilizar lo que ya sabemos y sustituir algunas cosas en esta fórmula:</p>
+<p><span class="math display">\[
+Si \ sabemos \ que\ M=C+I \ y \ que \ I=Cit,\\
+entonces \ M=C+Cit\\
+factorizando \ M=C(1+it)
+\]</span></p>
+<p>La fórmula para calcular directamente el monto es_</p>
+<p><span class="math display">\[
+M=C(1+it)
+\]</span></p>
+<div id="cálculo-del-monto" class="section level3">
+<h3>Cálculo del monto</h3>
+<p>El cálculo del monto nos resulta útil ya que la mayoría de las veces nos interesa conocer la cantidad total a pagar por un préstamo o un crédito. Por ejemplo, ¿cuánto pagaríamos en total por una deuda de 32,000 pesos si nos la otorgaron al 10% mensual y el plazo será de dos años?</p>
+<p>El capital (C) es de 32,000; la tasa de interés (i) es del 10% por mes, es decir 0.1; y el plazo (t) es de dos años, o sea, 24 periodos (meses). Sustituyendo en la fórmula nos queda:</p>
+<p><span class="math display">\[
+M=C(1+it)=32,000(1+0.1\cdot 24)=108,800
+\]</span></p>
+</div>
 </div>
 <div id="descuento-comercial." class="section level2">
 <h2>Descuento Comercial.</h2>

@@ -134,6 +134,36 @@ El plazo que debemos dar para obtener 30,000 pesos por cada 100,000 prestados es
 
 ## Monto Simple.
 
+Como ya se mencionó anteriormente, el monto es el resultado de sumar el capital original y el interés generado por este. Por ejemplo, si una inversión de 10,000 pesos generó 2,300 pesos por intereses, el monto será de 12,300 pesos. Al saber que es una simple suma, la fórmula resulta ser:
+
+$$
+M=C+I
+$$
+
+Pero si quisiéramos calcular de manera directa el monto, debemos utilizar lo que ya sabemos y sustituir algunas cosas en esta fórmula:
+
+$$
+Si \ sabemos \ que\ M=C+I \ y \ que \ I=Cit,\\
+entonces \ M=C+Cit\\
+factorizando \ M=C(1+it)
+$$
+
+La fórmula para calcular directamente el monto es_
+
+$$
+M=C(1+it)
+$$
+
+### Cálculo del monto
+
+El cálculo del monto nos resulta útil ya que la mayoría de las veces nos interesa conocer la cantidad total a pagar por un préstamo o un crédito. Por ejemplo, ¿cuánto pagaríamos en total por una deuda de 32,000 pesos si nos la otorgaron al 10% mensual y el plazo será de dos años?
+
+El capital (C) es de 32,000; la tasa de interés (i) es del 10% por mes, es decir 0.1; y el plazo (t) es de dos años, o sea, 24 periodos (meses). Sustituyendo en la fórmula nos queda:
+
+$$
+M=C(1+it)=32,000(1+0.1\cdot 24)=108,800
+$$
+
 ## Descuento Comercial.
 
 ## Descuento Real.
